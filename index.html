@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎓 Student Manager Dashboard</h1>
+
+
+        <section class="card">
+            <h2>Add New Student</h2>
+            <form id="studentForm">
+                <input type="text" id="nameInput" placeholder="Student Name" required>
+                <input type="email" id="emailInput" placeholder="Student Email" required>
+                <button type="submit">Save Student</button>
+            </form>
+        </section>
+
+        
+        <section class="card">
+            <h2>Students List</h2>
+            <ul id="studentsList"></ul>
+            <p id="emptyMsg">No students yet.</p>
+        </section>
+
+
+        <section class="card">
+            <h2>API Users</h2>
+            <button id="loadApiBtn">Load API Users</button>
+            <ul id="apiList"></ul>
+        </section>
+
+        
+        <section class="card">
+            <h2>BOM Tools</h2>
+            <button id="askCourseBtn">Set My Course</button>
+            <button id="refreshBtn">🔄 Refresh Page</button>
+            <p id="welcomeMsg"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
